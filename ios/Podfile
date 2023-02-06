@@ -19,7 +19,12 @@ target 'agentManagement' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'agentManagementTests' do
+  target 'agentManagement-Dev' do
+    inherit! :complete
+    # Pods for testing
+  end
+  
+  target 'agentManagement-Stage' do
     inherit! :complete
     # Pods for testing
   end
