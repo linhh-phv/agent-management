@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C80B921A6F3F58F76C31292 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		0C80B921A6F3F58F76C31292 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -38,9 +38,9 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-agentManagement-agentManagementTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-agentManagement-agentManagementTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5F8962E99767DC28591A2B /* libPods-agentManagement-agentManagement-Stage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-agentManagement-agentManagement-Stage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D287BD2991554B0080A988 /* agentManagement-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "agentManagement-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23D287BE2991554B0080A988 /* agentManagement Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "agentManagement Dev-Info.plist"; path = "/Users/linhpham/Desktop/altek-clone/agentManagement/ios/agentManagement Dev-Info.plist"; sourceTree = "<absolute>"; };
+		23D287BE2991554B0080A988 /* info-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "info-dev.plist"; path = "/Users/linhpham/Desktop/altek-clone/agentManagement/ios/info-dev.plist"; sourceTree = "<absolute>"; };
 		23D287D0299155A10080A988 /* agentManagement-Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "agentManagement-Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23D287D1299155A10080A988 /* agentManagement Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "agentManagement Stage-Info.plist"; path = "/Users/linhpham/Desktop/altek-clone/agentManagement/ios/agentManagement Stage-Info.plist"; sourceTree = "<absolute>"; };
+		23D287D1299155A10080A988 /* info-stage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "info-stage.plist"; path = "/Users/linhpham/Desktop/altek-clone/agentManagement/ios/info-stage.plist"; sourceTree = "<absolute>"; };
 		3B4392A12AC88292D35C810B /* Pods-agentManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agentManagement.debug.xcconfig"; path = "Target Support Files/Pods-agentManagement/Pods-agentManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-agentManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agentManagement.release.xcconfig"; path = "Target Support Files/Pods-agentManagement/Pods-agentManagement.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-agentManagement-agentManagementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agentManagement-agentManagementTests.debug.xcconfig"; path = "Target Support Files/Pods-agentManagement-agentManagementTests/Pods-agentManagement-agentManagementTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* BuildFile in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* (null) in Frameworks */,
 				7BC624C5EFC9455B5F47E5D7 /* libPods-agentManagement.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +141,8 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				23D287BE2991554B0080A988 /* agentManagement Dev-Info.plist */,
-				23D287D1299155A10080A988 /* agentManagement Stage-Info.plist */,
+				23D287BE2991554B0080A988 /* info-dev.plist */,
+				23D287D1299155A10080A988 /* info-stage.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -665,7 +665,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "agentManagement Dev-Info.plist";
+				INFOPLIST_FILE = "info-dev.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,7 +690,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "agentManagement Dev-Info.plist";
+				INFOPLIST_FILE = "info-dev.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -715,7 +715,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "agentManagement Stage-Info.plist";
+				INFOPLIST_FILE = "info-stage";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -740,7 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "agentManagement Stage-Info.plist";
+				INFOPLIST_FILE = "info-stage";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
