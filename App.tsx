@@ -33,5 +33,5 @@ const App = () => {
   return <AppContainer />;
 };
 
-const HocApp_CodePush = true ? CodePush(CODE_PUSH_OPTIONS)(App) : App;
+const HocApp_CodePush = __DEV__ ? App : CodePush(CODE_PUSH_OPTIONS)(App);
 export default HocApp_CodePush;
