@@ -21,7 +21,9 @@ const App = () => {
       },
       status => {
         if (status === CodePush.SyncStatus.UPDATE_INSTALLED) {
-          Alert.alert('Updating success!');
+          setTimeout(() => {
+            Alert.alert('Updating success!');
+          }, 1000);
         }
       },
     );

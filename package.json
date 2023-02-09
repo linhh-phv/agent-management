@@ -20,9 +20,24 @@
     "codepush:mandatory:android:dev": "appcenter codepush release-react -a linhh.phv/Agent-Management-Android-1 -d Dev -m",
     "codepush:mandatory:android:staging": "appcenter codepush release-react -a linhh.phv/Agent-Management-Android-1 -d Staging -m",
     "codepush:mandatory:android:prod": "appcenter codepush release-react -a linhh.phv/Agent-Management-Android-1 -d Production -m",
-    "ios:staging": "react-native run-ios --scheme \"agentManagement-Stage\"  --configuration Debug",
-    "ios:dev": "react-native run-ios --scheme \"agentManagement-Dev\"  --configuration Debug",
-    "ios:prod": "react-native run-ios --scheme \"agentManagement\"  --configuration Debug"
+    "setup-env-dev": "cp -rf .env.development ./ios/AgentManagement.xcconfig",
+    "setup-env-staging": "cp -rf .env.staging ./ios/AgentManagement.xcconfig",
+    "setup-env-prod": "cp -rf .env.production ./ios/AgentManagement.xcconfig",
+    "bundle:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'",
+    "ios:staging": "yarn setup-env-staging && react-native run-ios --scheme \"agentManagement-Stage\"  --configuration DebugStage --simulator='iPhone 13'",
+    "ios:staging-release": "yarn setup-env-staging && react-native run-ios --scheme \"agentManagement-Stage\"  --configuration ReleaseStage --simulator='iPhone 13'",
+    "ios:dev": "yarn setup-env-dev && react-native run-ios --scheme \"agentManagement-Dev\"  --configuration DebugDev --simulator='iPhone 13'",
+    "ios:dev-release": "yarn setup-env-dev && react-native run-ios --scheme \"agentManagement-Dev\"  --configuration ReleaseDev --simulator='iPhone 13'",
+    "ios:prod": "yarn setup-env-prod && react-native run-ios --scheme \"agentManagement\"  --configuration Debug --simulator='iPhone 13'",
+    "ios:prod-release": "yarn setup-env-prod && react-native run-ios --scheme \"agentManagement\"  --configuration Release --simulator='iPhone 13'",
+    "ios:prod-release:device": "yarn setup-env-prod && react-native run-ios --scheme \"agentManagement\"  --configuration Release --udid='00008020-00180C3C0130003A'",
+    "codepush:ios:dev": "appcenter codepush release-react -a linhh.phv/Agent-Management-iOS -d Dev",
+    "codepush:ios:staging": "appcenter codepush release-react -a linhh.phv/Agent-Management-iOS -d Staging",
+    "codepush:ios:prod": "appcenter codepush release-react -a linhh.phv/Agent-Management-iOS -d Production",
+    "codepush:mandatory:ios:dev": "appcenter codepush release-react -a linhh.phv/Agent-Management-iOS -d Dev -m",
+    "codepush:mandatory:ios:staging": "appcenter codepush release-react -a linhh.phv/Agent-Management-iOS -d Staging -m",
+    "codepush:mandatory:ios:prod": "appcenter codepush release-react -a linhh.phv/Agent-Management-iOS -d Production -m"
+
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.4",

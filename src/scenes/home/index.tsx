@@ -7,7 +7,7 @@ export const HomeScreen = () => {
 
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>HomeScreen </Text>
+      <Text>HomeScreen {Config.ENV} ne </Text>
       <Text>current env: {Config.ENV}</Text>
     </View>
   );

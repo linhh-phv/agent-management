@@ -23,16 +23,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "23D287BF299155A10080A988"
-               BuildableName = "agentManagement-Stage.app"
-               BlueprintName = "agentManagement-Stage"
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "Agent Management.app"
+               BlueprintName = "agentManagement"
                ReferencedContainer = "container:agentManagement.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "DebugStage"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -40,7 +40,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "DebugStage"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -62,15 +62,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "23D287BF299155A10080A988"
-            BuildableName = "agentManagement-Stage.app"
-            BlueprintName = "agentManagement-Stage"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "Agent Management.app"
+            BlueprintName = "agentManagement"
             ReferencedContainer = "container:agentManagement.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "ReleaseStage"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -79,18 +79,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "23D287BF299155A10080A988"
-            BuildableName = "agentManagement-Stage.app"
-            BlueprintName = "agentManagement-Stage"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "Agent Management.app"
+            BlueprintName = "agentManagement"
             ReferencedContainer = "container:agentManagement.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "DebugStage">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "ReleaseStage"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
