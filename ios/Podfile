@@ -2,6 +2,16 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '11.0'
+
+project 'agentManagement', {
+  'DebugDev' => :debug,
+  'DebugStage' => :debug,
+  'Debug' => :debug,
+  'ReleaseDev' => :release,
+  'ReleaseStage' => :release,
+  'Release' => :release,
+}
+
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'agentManagement' do
@@ -19,15 +29,6 @@ target 'agentManagement' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'agentManagement-Dev' do
-    inherit! :complete
-    # Pods for testing
-  end
-  
-  target 'agentManagement-Stage' do
-    inherit! :complete
-    # Pods for testing
-  end
 
   # Enables Flipper.
   #
