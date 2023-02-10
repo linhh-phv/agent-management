@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import AppContainer from './src';
+import AppContainer from 'src';
 import CodePush from 'react-native-code-push';
 import {Alert} from 'react-native';
 

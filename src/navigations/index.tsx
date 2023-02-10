@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import AppsScreens from './appNav';
-import AuthScreens from './authNav';
+import AppsScreens from '~navigations/appNav';
+import AuthScreens from '~navigations/authNav';
 
 const MainNavigation = () => {
   if (false) {

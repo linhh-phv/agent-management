@@ -1,8 +1,8 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {MANAGEMENT_SCREEN} from '../../../constants/screenKeys';
-import {ManagementParamsList} from './type';
-import {ManagementScreen} from '../../../scenes/management';
+import {MANAGEMENT_SCREEN} from '~constants/screenKeys';
+import {ManagementParamsList} from '~navigations/appNav/managementTab/type';
+import {ManagementScreen} from '~scenes/management';
 
 const ManagementStack = createNativeStackNavigator<ManagementParamsList>();
 
