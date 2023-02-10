@@ -6,7 +6,7 @@ import {
   HOME_SCREEN_TAB,
   MAIN_SCREEN,
   MANAGEMENT_SCREEN_TAB,
-} from '../constants/screenKeys';
+} from '~constants/screenKeys';
 
 export type MainParamsList = {
   [MAIN_SCREEN]: {};

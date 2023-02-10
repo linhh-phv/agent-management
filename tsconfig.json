@@ -9,7 +9,18 @@
       "moduleResolution": "node",
       "noEmit": true,
       "strict": true,
-      "target": "esnext"
+      "target": "esnext",
+      "baseUrl": ".",
+      "paths": {
+        "~*": ["./src/*"],
+        "~constants": ["./src/constants"],
+        "~navigations": ["./src/navigations"],
+        "~scenes": ["./src/scenes"],
+        "~styles": ["./src/styles"],
+        "~utils": ["./src/utils"],
+        "~redux": ["./src/redux"],
+        "~hooks": ["./src/hooks"],
+      },
     },
     "exclude": [
       "node_modules",

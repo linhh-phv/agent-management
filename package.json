@@ -43,7 +43,6 @@
     "codepush:mandatory:dev": "yarn codepush:mandatory:android:dev && codepush:mandatory:ios:dev",
     "codepush:mandatory:staging": "yarn codepush:mandatory:android:staging && codepush:mandatory:ios:staging",
     "codepush:mandatory:prod": "yarn codepush:mandatory:android:prod && codepush:mandatory:ios:prod"
-
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.4",
@@ -65,6 +64,7 @@
     "@types/react-native": "^0.71.2",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.4.1",
+    "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.33.0",
     "jest": "^29.4.1",
     "metro-react-native-babel-preset": "^0.75.0",

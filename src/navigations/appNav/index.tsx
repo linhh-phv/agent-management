@@ -8,13 +8,13 @@ import {
   HOME_SCREEN_TAB,
   MAIN_SCREEN,
   MANAGEMENT_SCREEN_TAB,
-} from '../../constants/screenKeys';
-import {checkPlatform} from '../../utils';
-import {Size} from '../../styles/size';
-import {Colors} from '../../styles';
-import HomeStackScreen from './homeTab';
-import ManagementStackScreen from './managementTab';
-import AccountStackScreen from './accountTab';
+} from '~constants/screenKeys';
+import {checkPlatform} from '~utils';
+import {Size} from '~styles/size';
+import {Colors} from '~styles';
+import HomeStackScreen from '~navigations/appNav/homeTab';
+import ManagementStackScreen from '~navigations/appNav/managementTab';
+import AccountStackScreen from '~navigations/appNav/accountTab';
 
 const Stack = createNativeStackNavigator<MainParamsList>();
 const Tab = createBottomTabNavigator<TabParamsList>();

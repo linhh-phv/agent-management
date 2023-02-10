@@ -1,6 +1,6 @@
 import {RouteProp} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {ACCOUNT_SCREEN} from '../../../constants/screenKeys';
+import {ACCOUNT_SCREEN} from '~constants/screenKeys';
 
 export type AccountParamsList = {
   [ACCOUNT_SCREEN]: {};
