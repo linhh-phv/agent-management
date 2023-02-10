@@ -150,6 +150,9 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        applicationId project.env.get("APP_ID")
+        versionCode project.env.get("VERSION_CODE").toInteger()
+        versionName project.env.get("VERSION_NAME")
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
 
         if (isNewArchitectureEnabled()) {
