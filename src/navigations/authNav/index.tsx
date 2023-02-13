@@ -14,7 +14,12 @@ const authScreen = [
 
 const AuthScreens = () => {
   return (
-    <Stack.Navigator screenOptions={{gestureEnabled: false}}>
+    <Stack.Navigator
+      screenOptions={{
+        gestureEnabled: false,
+        animation: 'none',
+        headerShown: false,
+      }}>
       {authScreen.map((item, key) => (
         <Stack.Screen key={key} name={item.name} component={item.component} />
       ))}
